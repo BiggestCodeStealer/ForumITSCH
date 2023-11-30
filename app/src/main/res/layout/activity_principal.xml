@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Luis Fernando Garcia Franco-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/white"
+    tools:context=".Principal">
+
+    <TableLayout
+        android:id="@+id/tableRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btnUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/rojo_c3"
+                android:src="@drawable/baseline_person_24"
+                app:tint="@color/white"/>
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/buscar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border"
+                android:focusable="false"
+                android:imeOptions="actionDone"
+                app:closeIcon="@drawable/baseline_clear_24"
+                app:iconifiedByDefault="false"
+                app:queryHint="Buscar..."
+                app:searchHintIcon="@null"
+                app:searchIcon="@drawable/baseline_search_24" />
+
+        </TableRow>
+    </TableLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tableRow"
+        android:id="@+id/rvNoticias"
+        android:scrollbars="vertical"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnCrear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/rojo_c3"
+        android:src="@drawable/baseline_add_24"
+        app:tint="@color/white"/>
+
+
+
+</RelativeLayout>

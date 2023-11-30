@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp"
+    android:background="@color/white"
+    tools:context=".Registro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo_forum"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/texto02"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/rojo_c3"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="@string/hint03"
+            app:hintTextColor="@color/gris_5e"
+            app:boxStrokeColor="@color/rojo_c3"
+            android:layout_marginTop="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/apellidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="@string/hint04"
+            app:hintTextColor="@color/gris_5e"
+            app:boxStrokeColor="@color/rojo_c3">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hint05"
+                android:textSize="16sp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+
+            <Spinner
+                android:id="@+id/carrera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/carreras"
+                android:layout_marginStart="20dp"/>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email_registro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="@string/hint01"
+            app:hintTextColor="@color/gris_5e"
+            app:boxStrokeColor="@color/rojo_c3">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_registro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="@string/hint02"
+            app:hintTextColor="@color/gris_5e"
+            app:boxStrokeColor="@color/rojo_c3"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnRegistrarme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/boton04"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:backgroundTint="@color/rojo_c3"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/btnYaEstoyRegistrado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:text="@string/boton05"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/gris_5e"/>
+
+    </LinearLayout>
+
+</ScrollView>

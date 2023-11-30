@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "702379715114",
+    "project_id": "forumitsch",
+    "storage_bucket": "forumitsch.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702379715114:android:4cbed652e283450e027153",
+        "android_client_info": {
+          "package_name": "mx.tecnm.cdhidalgo.forumitsch"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVk7RxNIDVvL5N6CIShEwCvg8gM93NHCo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

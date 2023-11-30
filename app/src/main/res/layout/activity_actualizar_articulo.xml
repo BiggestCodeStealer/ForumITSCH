@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActualizarArticulo">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/border"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/subirImagen"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/subir_imagen" />
+
+            <EditText
+                android:id="@+id/subirTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border"
+                android:gravity="start|center_vertical"
+                android:hint="Ingresa el titulo"
+                android:maxLines="1"
+                android:padding="16dp"
+                android:textColor="@color/rojo_c3" />
+
+            <EditText
+                android:id="@+id/subirDesc"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border"
+                android:gravity="start|center_vertical"
+                android:hint="Ingrese la descripcion"
+                android:padding="16dp"
+                android:textColor="@color/rojo_c3" />
+
+            <EditText
+                android:id="@+id/subirCat"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border"
+                android:gravity="start|center_vertical"
+                android:hint="Ingrese la categoria"
+                android:padding="16dp"
+                android:textColor="@color/rojo_c3" />
+
+            <Button
+                android:id="@+id/btnSubir"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:text="Subir"
+                android:textSize="18sp"
+                app:cornerRadius="20dp"
+                android:backgroundTint="@color/rojo_c3"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>

@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">ForumITSCH</string>
+
+    <string name="texto01">Bienvenido</string>
+    <string name="texto02">Registro de usuario</string>
+    <string name="texto03">Recuperar contraseña</string>
+    <string name="texto04">Título</string>
+    <string name="texto05">Autor</string>
+    <string name="texto06">Fecha</string>
+    <string name="hint01">Email</string>
+    <string name="hint02">Contraseña</string>
+    <string name="hint03">Nombre</string>
+    <string name="hint04">Apellidos</string>
+    <string name="hint05">Carrera:</string>
+    <string name="boton01">Ingresar</string>
+    <string name="boton02">Olvidé mi contraseña</string>
+    <string name="boton03">No estoy registrado</string>
+    <string name="boton04">Registrarme</string>
+    <string name="boton05">Ya estoy registrado</string>
+    <string name="boton06">Cerrar sesión</string>
+    <string name="boton07">Recuperar contraseña</string>
+    <string name="boton08">Regresar</string>
+
+    <string-array name="carreras">
+        <item>Bioquímica</item>
+        <item>Gestión</item>
+        <item>Industrial</item>
+        <item>Mecatrónica</item>
+        <item>Nanotecnología</item>
+        <item>Sistemas</item>
+        <item>TICs</item>
+    </string-array>
+
+</resources>

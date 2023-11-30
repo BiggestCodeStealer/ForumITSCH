@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recCard"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/recImagen"
+            android:src="@drawable/img_regresar"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginVertical="10dp"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/recTitulo"
+            android:text="Titulo"
+            android:textColor="@color/rojo_c3"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="2dp"
+            android:layout_toEndOf="@id/recImagen"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/recCat"
+            android:text="Categoria"
+            android:layout_toEndOf="@id/recImagen"
+            android:layout_below="@id/recTitulo"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:layout_marginBottom="2dp"
+            android:textColor="@color/rojo_c3"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/recDesc"
+            android:text="Descripcion"
+            android:layout_toEndOf="@id/recImagen"
+            android:layout_below="@id/recCat"
+            android:maxLines="1"
+            android:layout_marginBottom="12dp"
+            android:textColor="@color/rojo_c3"
+            android:textSize="12sp"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

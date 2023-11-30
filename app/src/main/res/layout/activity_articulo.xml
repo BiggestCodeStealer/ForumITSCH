@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp"
+    android:background="@color/white"
+    tools:context=".Articulo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tituloArticulo"
+            android:text="Titulo"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:id="@+id/imagenArticulo"
+            android:src="@drawable/logo_forum"
+            android:padding="8dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/catArticulo"
+            android:text="Categoria"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/descArticulo"
+            android:text="Descripcion"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.github.clans.fab.FloatingActionMenu
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                app:menu_fab_size="normal"
+                android:layout_marginBottom="0dp"
+                android:layout_marginEnd="20dp"
+                app:menu_colorPressed="@color/rojo_c3"
+                app:menu_colorNormal="@color/rojo_c3"
+                app:menu_icon="@drawable/baseline_format_list_bulleted_24"
+                app:menu_openDirection="up"
+                app:menu_showShadow="true">
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnBorrarA"
+                    android:src="@drawable/baseline_delete_24"
+                    app:fab_showShadow="true"
+                    app:fab_colorNormal="@color/rojo_c3"
+                    app:fab_size="mini">
+
+                </com.github.clans.fab.FloatingActionButton>
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnActualizarA"
+                    android:src="@drawable/baseline_edit_24"
+                    app:fab_showShadow="true"
+                    app:fab_colorNormal="@color/gris_5e"
+                    app:fab_size="mini">
+                </com.github.clans.fab.FloatingActionButton>
+
+            </com.github.clans.fab.FloatingActionMenu>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
