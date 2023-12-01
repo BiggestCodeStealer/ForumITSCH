@@ -45,7 +45,7 @@ class Articulo : AppCompatActivity() {
         }
 
         binding.btnFlotante.visibility = View.INVISIBLE
-        if(usuario.rol == "admin"){
+        if(usuario.rol == "publicador" || usuario.rol == "admin"){
             binding.btnFlotante.visibility = View.VISIBLE
         }
 

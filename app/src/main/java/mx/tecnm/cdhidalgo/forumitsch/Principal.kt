@@ -67,7 +67,7 @@ class Principal : AppCompatActivity() {
         })
 
         binding.btnCrear.visibility = View.INVISIBLE
-        if(usuario.rol == "admin"){
+        if(usuario.rol == "publicador" || usuario.rol == "admin"){
             binding.btnCrear.visibility = View.VISIBLE
             binding.btnCrear.setOnClickListener{
                 val intent = Intent(this, CrearArticulo::class.java)
@@ -75,10 +75,20 @@ class Principal : AppCompatActivity() {
             }
         }
 
-        binding.btnUsuario.setOnClickListener {
-            val intent = Intent(this, Actualizar::class.java)
-            startActivity(intent)
+
+        if(usuario.rol == "admin"){
+            binding.btnUsuario.setOnClickListener {
+                val intent = Intent(this, Administrar::class.java)
+                startActivity(intent)
+            }
+        }else{
+            binding.btnUsuario.setOnClickListener {
+                val intent = Intent(this, Actualizar::class.java)
+                startActivity(intent)
+            }
         }
+
+
 
         binding.buscar.setOnQueryTextListener(object : SearchView.OnQueryTextListener,
             androidx.appcompat.widget.SearchView.OnQueryTextListener {

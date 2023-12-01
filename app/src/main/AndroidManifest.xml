@@ -16,6 +16,9 @@
         android:theme="@style/Theme.ForumITSCH"
         tools:targetApi="31">
         <activity
+            android:name=".Administrar"
+            android:exported="false" />
+        <activity
             android:name=".ActualizarArticulo"
             android:exported="false" />
         <activity

@@ -14,6 +14,7 @@
     <string name="texto11">Regresar</string>>
     <string name="texto12">Categoria</string>
     <string name="texto13">Descripción</string>
+    <string name="texto14">Rol:</string>
     <string name="hint01">Email</string>
     <string name="hint02">Contraseña</string>
     <string name="hint03">Nombre</string>
@@ -31,6 +32,7 @@
     <string name="boton06">Cerrar sesión</string>
     <string name="boton07">Recuperar contraseña</string>
     <string name="boton08">Regresar</string>
+    <string name="boton09">Eliminar cuenta</string>
 
     <string-array name="carreras">
         <item>Bioquímica</item>
@@ -40,6 +42,12 @@
         <item>Nanotecnología</item>
         <item>Sistemas</item>
         <item>TICs</item>
+    </string-array>
+
+    <string-array name="roles">
+        <item>comun</item>
+        <item>publicador</item>
+        <item>admin</item>
     </string-array>
 
 </resources>
