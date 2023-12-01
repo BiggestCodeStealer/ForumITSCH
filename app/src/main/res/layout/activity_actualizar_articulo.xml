@@ -16,6 +16,16 @@
         app:cardCornerRadius="30dp"
         app:cardElevation="20dp">
 
+        <ImageButton
+            android:id="@+id/btnRegresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_regresar"
+            android:background="@color/white"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            app:tint="@color/rojo_c3"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -25,7 +35,7 @@
             android:padding="20dp">
 
             <ImageView
-                android:id="@+id/subirImagen"
+                android:id="@+id/actualizarImagen"
                 android:layout_width="200dp"
                 android:layout_height="200dp"
                 android:layout_gravity="center"
@@ -34,45 +44,48 @@
                 android:src="@drawable/subir_imagen" />
 
             <EditText
-                android:id="@+id/subirTitulo"
+                android:id="@+id/actualizarTitulo"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/border"
                 android:gravity="start|center_vertical"
-                android:hint="Ingresa el titulo"
+                android:hint="@string/hint07"
                 android:maxLines="1"
                 android:padding="16dp"
                 android:textColor="@color/rojo_c3" />
 
             <EditText
-                android:id="@+id/subirDesc"
+                android:id="@+id/actualizarDesc"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/border"
                 android:gravity="start|center_vertical"
-                android:hint="Ingrese la descripcion"
+                android:hint="@string/hint08"
                 android:padding="16dp"
                 android:textColor="@color/rojo_c3" />
 
             <EditText
-                android:id="@+id/subirCat"
+                android:id="@+id/actualizarCat"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/border"
                 android:gravity="start|center_vertical"
-                android:hint="Ingrese la categoria"
+                android:maxLines="1"
+                android:hint="@string/hint09"
                 android:padding="16dp"
                 android:textColor="@color/rojo_c3" />
 
             <Button
-                android:id="@+id/btnSubir"
+                android:id="@+id/btnUpdate"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginTop="20dp"
-                android:text="Subir"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:text="@string/texto08"
                 android:textSize="18sp"
                 app:cornerRadius="20dp"
                 android:backgroundTint="@color/rojo_c3"/>

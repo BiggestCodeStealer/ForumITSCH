@@ -10,12 +10,20 @@
     tools:context=".Actualizar">
 
     <LinearLayout
+        android:layout_marginTop="-4dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <ImageButton
+            android:id="@+id/btnRegresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_regresar"
+            android:background="@color/white"
+            app:tint="@color/rojo_c3"/>
+
         <ImageView
-            android:layout_marginTop="10dp"
             android:layout_width="400dp"
             android:layout_height="200dp"
             android:layout_gravity="center"
@@ -24,7 +32,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Actualizar información"
+            android:text="@string/texto07"
             android:textSize="26sp"
             android:textStyle="bold"
             android:textAlignment="center"
@@ -37,8 +45,8 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:hint="@string/hint03"
             app:hintTextColor="@color/gris_5e"
-            app:boxStrokeColor="@color/rojo_c3"
-            android:layout_marginTop="20dp">
+            app:boxStrokeColor="@color/naranja"
+            android:layout_marginTop="0dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -54,7 +62,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:hint="@string/hint04"
             app:hintTextColor="@color/gris_5e"
-            app:boxStrokeColor="@color/rojo_c3">
+            app:boxStrokeColor="@color/naranja">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -96,7 +104,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:hint="@string/hint02"
             app:hintTextColor="@color/gris_5e"
-            app:boxStrokeColor="@color/rojo_c3"
+            app:boxStrokeColor="@color/naranja"
             app:passwordToggleEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -110,7 +118,7 @@
             android:id="@+id/btnActualizar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Actualizar"
+            android:text="@string/texto08"
             android:textSize="16sp"
             android:textStyle="bold"
             android:textAllCaps="true"
@@ -122,9 +130,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@style/Widget.MaterialComponents.Button.TextButton"
-            android:text="Eliminar mi cuenta"
-            android:textSize="12sp"
+            android:text="@string/texto09"
+            android:textSize="14sp"
             android:layout_gravity="center"
+            android:textAllCaps="false"
             android:layout_marginTop="10dp"
             android:textColor="@color/gris_5e"/>
 

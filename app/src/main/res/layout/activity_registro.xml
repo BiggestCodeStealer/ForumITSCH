@@ -36,7 +36,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:hint="@string/hint03"
             app:hintTextColor="@color/gris_5e"
-            app:boxStrokeColor="@color/rojo_c3"
+            app:boxStrokeColor="@color/naranja"
             android:layout_marginTop="10dp">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -53,7 +53,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:hint="@string/hint04"
             app:hintTextColor="@color/gris_5e"
-            app:boxStrokeColor="@color/rojo_c3">
+            app:boxStrokeColor="@color/naranja">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -94,7 +94,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:hint="@string/hint01"
             app:hintTextColor="@color/gris_5e"
-            app:boxStrokeColor="@color/rojo_c3">
+            app:boxStrokeColor="@color/naranja">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -110,7 +110,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:hint="@string/hint02"
             app:hintTextColor="@color/gris_5e"
-            app:boxStrokeColor="@color/rojo_c3"
+            app:boxStrokeColor="@color/naranja"
             app:passwordToggleEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -129,7 +129,7 @@
             android:textStyle="bold"
             android:textAllCaps="true"
             android:backgroundTint="@color/rojo_c3"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="20dp"/>
 
         <Button
             android:id="@+id/btnYaEstoyRegistrado"
@@ -139,8 +139,8 @@
             android:text="@string/boton05"
             android:textAllCaps="false"
             android:textSize="14sp"
+            android:textStyle="bold"
             android:layout_gravity="center"
-            android:layout_marginTop="10dp"
             android:textColor="@color/gris_5e"/>
 
     </LinearLayout>

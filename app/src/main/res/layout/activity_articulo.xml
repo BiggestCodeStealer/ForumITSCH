@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="40dp"
+    android:scrollbars="none"
     android:background="@color/white"
     tools:context=".Articulo">
 
@@ -14,42 +15,68 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <ImageButton
+            android:id="@+id/btnRegresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_regresar"
+            android:background="@color/white"
+            app:tint="@color/rojo_c3"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/tituloArticulo"
-            android:text="Titulo"
+            android:text="@string/texto04"
+            android:textStyle="bold"
             android:textSize="24sp"
-            android:layout_gravity="center"
             android:layout_marginBottom="10dp"
-            android:textColor="@color/black"/>
+            android:layout_gravity="center"
+            android:textColor="@color/rojo_c3"/>
 
         <ImageView
-            android:layout_width="400dp"
-            android:layout_height="200dp"
+            android:layout_width="410dp"
+            android:layout_height="205dp"
             android:id="@+id/imagenArticulo"
             android:src="@drawable/logo_forum"
-            android:padding="8dp"
             android:layout_gravity="center"/>
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/catArticulo"
-            android:text="Categoria"
-            android:textSize="20sp"
-            android:layout_marginTop="10dp"
-            android:padding="10dp"
-            android:textColor="@color/black"
-            android:layout_gravity="center"/>
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/catArticulo"
+                android:text="@string/texto12"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginEnd="50dp"
+                android:padding="10dp"
+                android:textColor="@color/naranja"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/fechaArticulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/texto06"
+                android:textStyle="bold"
+                android:textColor="@color/gris_5e"
+                android:textSize="14sp" />
+
+        </LinearLayout>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/descArticulo"
-            android:text="Descripcion"
+            android:text="@string/texto13"
             android:textSize="16sp"
-            android:layout_marginTop="10dp"
             android:padding="10dp"
             android:textColor="@color/black"
             android:layout_gravity="center"/>
@@ -59,6 +86,7 @@
             android:layout_height="match_parent">
 
             <com.github.clans.fab.FloatingActionMenu
+                android:id="@+id/btnFlotante"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
@@ -66,8 +94,8 @@
                 app:menu_fab_size="normal"
                 android:layout_marginBottom="0dp"
                 android:layout_marginEnd="20dp"
-                app:menu_colorPressed="@color/rojo_c3"
-                app:menu_colorNormal="@color/rojo_c3"
+                app:menu_colorPressed="@color/amarillo"
+                app:menu_colorNormal="@color/naranja"
                 app:menu_icon="@drawable/baseline_format_list_bulleted_24"
                 app:menu_openDirection="up"
                 app:menu_showShadow="true">
@@ -78,7 +106,8 @@
                     android:id="@+id/btnBorrarA"
                     android:src="@drawable/baseline_delete_24"
                     app:fab_showShadow="true"
-                    app:fab_colorNormal="@color/rojo_c3"
+                    app:menu_colorPressed="@color/amarillo"
+                    app:fab_colorNormal="@color/rojito"
                     app:fab_size="mini">
 
                 </com.github.clans.fab.FloatingActionButton>
@@ -89,7 +118,8 @@
                     android:id="@+id/btnActualizarA"
                     android:src="@drawable/baseline_edit_24"
                     app:fab_showShadow="true"
-                    app:fab_colorNormal="@color/gris_5e"
+                    app:menu_colorPressed="@color/amarillo"
+                    app:fab_colorNormal="@color/verde"
                     app:fab_size="mini">
                 </com.github.clans.fab.FloatingActionButton>
 

@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.Spinner
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
@@ -21,6 +22,7 @@ class Actualizar : AppCompatActivity() {
 
     private lateinit var btnActualizar:Button
     private lateinit var btnEliminar:Button
+    private lateinit var btnAtras: ImageButton
 
     private lateinit var nombre:TextInputLayout
     private lateinit var apellidos:TextInputLayout
@@ -39,6 +41,7 @@ class Actualizar : AppCompatActivity() {
 
         btnActualizar = findViewById(R.id.btnActualizar)
         btnEliminar = findViewById(R.id.btnEliminar)
+        btnAtras = findViewById(R.id.btnRegresar)
         nombre = findViewById(R.id.uNombre)
         apellidos = findViewById(R.id.uApellidos)
         carrera = findViewById(R.id.uCarrera)
@@ -56,6 +59,10 @@ class Actualizar : AppCompatActivity() {
                 _carrera = parent?.getItemAtPosition(position).toString()
             }
             override fun onNothingSelected(parent: AdapterView<*>?) {}
+        }
+        btnAtras.setOnClickListener{
+            val intent = Intent (this,Principal::class.java)
+            startActivity(intent)
         }
 
         btnActualizar.setOnClickListener{
@@ -137,6 +144,9 @@ class Actualizar : AppCompatActivity() {
             confirmaDialogo.show()
         }
 
+    }
+
+    override fun onBackPressed() {
     }
 
     private fun notificacion() {

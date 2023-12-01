@@ -16,6 +16,16 @@
         app:cardCornerRadius="30dp"
         app:cardElevation="20dp">
 
+        <ImageButton
+            android:id="@+id/btnRegresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_regresar"
+            android:background="@color/white"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            app:tint="@color/rojo_c3"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -40,10 +50,10 @@
                 android:layout_marginTop="20dp"
                 android:background="@drawable/border"
                 android:gravity="start|center_vertical"
-                android:hint="Ingresa el titulo"
+                android:hint="@string/hint07"
                 android:maxLines="1"
                 android:padding="16dp"
-                android:textColor="@color/rojo_c3" />
+                android:textColor="@color/black" />
 
             <EditText
                 android:id="@+id/subirDesc"
@@ -52,9 +62,9 @@
                 android:layout_marginTop="20dp"
                 android:background="@drawable/border"
                 android:gravity="start|center_vertical"
-                android:hint="Ingrese la descripcion"
+                android:hint="@string/hint08"
                 android:padding="16dp"
-                android:textColor="@color/rojo_c3" />
+                android:textColor="@color/black" />
 
             <EditText
                 android:id="@+id/subirCat"
@@ -62,17 +72,20 @@
                 android:layout_height="60dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/border"
+                android:maxLines="1"
                 android:gravity="start|center_vertical"
-                android:hint="Ingrese la categoria"
+                android:hint="@string/hint09"
                 android:padding="16dp"
-                android:textColor="@color/rojo_c3" />
+                android:textColor="@color/black" />
 
             <Button
                 android:id="@+id/btnSubir"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginTop="20dp"
-                android:text="Subir"
+                android:text="@string/texto10"
+                android:textStyle="bold"
+                android:textAllCaps="true"
                 android:textSize="18sp"
                 app:cornerRadius="20dp"
                 android:backgroundTint="@color/rojo_c3"/>

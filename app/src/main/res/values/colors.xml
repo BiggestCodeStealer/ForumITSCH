@@ -7,9 +7,11 @@
     <color name="light_blue_A200">#FF40C4FF</color>
     <color name="light_blue_A400">#FF00B0FF</color>
     <color name="black_overlay">#66000000</color>
-    <color name="rojo_c3">#C32217</color>
+    <color name="rojo_c3">#620E0E</color>
+    <color name="rojito">#E53935</color>
     <color name="gris_5e">#9F9F9F</color>
-    <color name="naranja">#FF9800</color>
-    <color name="amarillo">#FFEB3B</color>
+    <color name="verde">#43A047</color>
+    <color name="naranja">#E8BD40</color>
+    <color name="amarillo">#EFD17A</color>
     <color name="azul">#3F51B5</color>
 </resources>

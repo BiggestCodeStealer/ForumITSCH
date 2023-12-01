@@ -31,4 +31,7 @@ class Splash : AppCompatActivity() {
             startActivity(intent,transicion.toBundle())
         }, 4000)
     }
+
+    override fun onBackPressed() {
+    }
 }

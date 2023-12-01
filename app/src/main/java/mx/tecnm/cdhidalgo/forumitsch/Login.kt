@@ -74,6 +74,14 @@ class Login : AppCompatActivity() {
             val intent = Intent(this,Registro::class.java)
             startActivity(intent)
         }
+
+        btnRecuperar.setOnClickListener{
+            val intent = Intent(this,RecuperarPass::class.java)
+            startActivity(intent)
+        }
+    }
+
+    override fun onBackPressed() {
     }
 
     private fun notificacion() {

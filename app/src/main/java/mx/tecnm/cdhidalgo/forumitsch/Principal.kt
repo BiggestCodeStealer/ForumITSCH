@@ -56,6 +56,7 @@ class Principal : AppCompatActivity() {
                         listaNoticias.add(noticia)
                     }
                 }
+                listaNoticias.reverse()
                 adaptadorNoticias.notifyDataSetChanged()
                 dialog.dismiss()
             }
@@ -92,11 +93,17 @@ class Principal : AppCompatActivity() {
         })
     }
 
+    override fun onBackPressed() {
+        val intent = Intent(this, Login::class.java)
+        startActivity(intent)
+    }
+
     fun searchList(text: String){
         val searchList = ArrayList<Noticia>()
         for (noticia in listaNoticias){
             if(noticia.titulo?.lowercase()?.contains(text.lowercase()) == true ||
-                noticia.categoria?.lowercase()?.contains(text.lowercase()) == true){
+                noticia.categoria?.lowercase()?.contains(text.lowercase()) == true ||
+                noticia.key?.lowercase()?.contains(text.lowercase()) == true){
                 searchList.add(noticia)
             }
         }

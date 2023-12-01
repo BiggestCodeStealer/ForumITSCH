@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.Spinner
 import androidx.appcompat.app.AlertDialog
 import com.google.android.material.textfield.TextInputLayout
@@ -58,6 +59,7 @@ class Registro : AppCompatActivity() {
             override fun onNothingSelected(parent: AdapterView<*>?) {}
         }
 
+
         btnRegistrarme.setOnClickListener{
             val email = correo.editText?.text
             val psw = pass.editText?.text
@@ -99,6 +101,9 @@ class Registro : AppCompatActivity() {
             val intent = Intent(this,Login::class.java)
             startActivity(intent)
         }
+    }
+
+    override fun onBackPressed() {
     }
 
     private fun notificacion() {
